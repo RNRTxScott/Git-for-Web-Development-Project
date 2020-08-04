@@ -1,47 +1,114 @@
-Link to finished Code Pen: 
+Link to finished Code Pen: https://codepen.io/rnrtxscott/pen/rNeNNpg?editors=1100
 
-1. What is Semantic HTML? 
+    1. What is Semantic HTML? 
+    HTML that has a purpose or reasoning as opposed to using div/spans.
     2. What is HTML used for? 
+    It is used to structure pages on the internet.
     3. What is an attribute and where do we put it? 
+    attributes give more function to the code and it goes after the tag.
     4. What is the h1 tag used for? How many times should I use it on a page?
+    Heading 1. Typically used only once.
     5. Name two tags that have required attributes
+    <a> and <img>
     6. What do we put in the head of our HTML document? 
+    notes or what that code is used for so another developer can follow behind.
     7. What is an id? 
+    An attribute that can only be used once and is also helps when using CSS.
     8. What elements can I add an id to? 
+    you can add an id to <sections or <div or even <nav
     9. How many times can I use the same id on a page? 
+    Once
     10. What is a class? 
+    A class is similar to an id but can be used more than once for multiple objects.
     11. What elements can I add a class to? 
+    you can add an id to <sections or <div or even <nav
     12. How many times can I use the same class on a page? 
+    as many times as you wish
     13. How do I get my link to open in a new tab?
+    target=_blank inside the a tag
     14. What is the alt attribute in the image tag used for? 
+    So people can be described what their seeing due to an impairment.
     15. How do I reference an id?
+    You would use the #
     16. What is the difference between a section and a div
+    Section is a whole seperate area you section off and a div is used for smaller pieces to be seperated.
     17. What is CSS used for? 
+    CSS is used to style HTML
     18. How to we select an element? Example - every h2 on the page
+    h2{
+
+    }
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    class is used for multiple items in code and an id can only call to one thing.  
+    For class you could use this to call on specific <p> instead of all and change the color to pink.
+    For Id you would be able to call on it to change say the style but for only that one thing with the ID.
     20. How do we select classes in CSS?
+    Use the . ie: .oldtown 
     21. How do we select a p element with a single class of “human””?
+    call on the class thats already been assigned to that p by using .human{}
     22. What is a parent child selector? When would this be useful? 
+    Its a way to pick between parent or child to make changes using >.  can be helful when wanting to only
+    make changes to the features in the child.
     23. How do you select all links within a div with the class of sidebar?
+    Use the class to call on the <a tags to use them in group.
     24. What is a pseudo selector?
+    Is like a hover feature that shows your mouse over the selection using styling.
     25. What do we use the change the spacing between lines?
+    line-height: 4.6;
     26. What do we use to change the spacing between letters?
+    letter-spacing: 50000px
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    Caps: text-transform:uppercase; Lower: text-transform:lowercase; & Capitalize: text-transform:capitalize;
     28. How do I add a 1px border around my div that is dotted and black?
+    call to that div and add: 
+    outline-width:1px; 
+    outline-style:dotted;
+    outline-color:black;
     29. How do I select everything on the page? 
+    Use *
     30. How do I write a comment in CSS?
+    Start with */ and end with */
     31. How do I find out what file I am in, when I am using the command line? 
+    use pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    git-rm / There is no prompt to ask you if youre sure.
     34. Why should I use version control? 
+    Version control allows for acountability as well as a way to time travel if any issues occur after implementing something new.
     35. How often should I commit to github?
+    Often/Every 20 mins/Finsih a feature.
     36. What is the command we would use to push our repo up to github? 
+    git push 
     37. Walk me through Lambda's git flow. 
+    1.Fork the repo
+    2.Check for my name in the the repo name
+    3.Add TL as collaborator 
+    4.Clone Repo by copying the URL
+    5.use cd to get to the directory you wantin
+    6. use git clone with the URL
+    7.cd into the new repo
+    8. create a branch by using git checkout -b 'scott-vanderburg'
+    9.Work on project
+    10.ADD Work
+    11.commit
+    12.push
+    13. Go back to forked project on github and select your branch.
+    14.Create a poll request
+    15.Change base to your forked repo
+    16.Add TL to reviewrs
+    17. Do not merge your own pull request.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    In line elements can kind of be moved around freely without creating breaks where as a block will always create those breaks in the page.
     2. What happens when an element is positioned absolutely? 
+    That element is locked into a certain spacing from other blocks by using the distance to always keep it in the same place relative to the ancestor objects.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    div / h1 / footer , a / img , inline-block
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+    The box model shows from inside to outer of a css box from the padding to border to margin and then position, using all of these css is able to compute the coreect sizing.
+    The "fix": was allowing the dev to change the widths individually from the other facets of the box.
